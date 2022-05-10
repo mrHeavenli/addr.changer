@@ -39,20 +39,20 @@ change_mac()
 if [ $1 = "--help" ]
 then
 	cat usage.txt
-elif [ $1 = "--show-interfaces" ]
+elif [ $1 = "--interfaces" ]
 then
 	echo Interfaces:
 	for interface in $(ip link show | grep --colour=never -Eo "[0-9]+: \w{2,}")
 	do
 		echo $interface | grep --colour=never -Eo "[a-z0-9]{2,}"
 	done
-elif [ $1 = "--change-mac" ]
+elif [ $1 = "--mac" ]
 then
 	change_mac $2 $3
-elif [ $1 = "--change-hostname" ]
+elif [ $1 = "--hostname" ]
 then
 	change_hostname $2
-elif [ $1 = "--switch-mode" ]
+elif [ $1 = "--mode" ]
 then
 	switch_mode $2 $3
 fi

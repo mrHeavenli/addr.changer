@@ -3,13 +3,13 @@ addr-changer
 OPTIONS:
 --help				Shows this help message
 
---show-interfaces		Lists interfaces
+--interfaces			Lists interfaces
 
---change-mac INTERFACE MAC	Changes MAC address on interface INTERFACE to MAC
+--mac INTERFACE MAC		Changes MAC address on interface INTERFACE to MAC
 
---change-hostname HOSTNAME	Changes machine hostname to HOSTNAME
+--hostname HOSTNAME		Changes machine hostname to HOSTNAME
 
---switch-mode INTERFACE MODE    Changes mode on INTERFACE to MODE. 
+--mode INTERFACE MODE  	        Changes mode on INTERFACE to MODE. 
 				1 Managed
 				2 Monitor
 				Use the number 1 or 2 in place of MODE
